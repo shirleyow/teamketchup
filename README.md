@@ -1,2 +1,2 @@
 # teamketchup
-catching up with friends? look no further, ketchup is here!!
+just a casual first time in creating animations using css :) 
