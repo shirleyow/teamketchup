@@ -14,21 +14,35 @@
     background: var(--background);
   }
   
-  .box {
+  .box2 {
     position: absolute;
     left: 12.5px;
-    bottom: 343px;
+    bottom: 85px;
     background: var(--dark);
-    height: 12.8rem;
+    height: calc(12.8rem/2);
     width: 7.55rem;
     outline: 0;
     overflow: hidden; /* Set to none to see fill square outside box */
     z-index: -1;
     display: inline-block;
-    border-radius: 8px 8px 15px 15px;
+    border-radius: 3px 3px 15px 15px;
   }
 
-  .box::before {
+  .stacked_box {
+    position: absolute;
+    left: 12.5px;
+    bottom: 170px;
+    background: var(--dark);
+    height: 8rem;
+    width: 7.55rem;
+    outline: 0;
+    overflow: hidden; /* Set to none to see fill square outside box */
+    z-index: -1;
+    display: inline-block;
+    border-radius: 3px 3px 15px 15px;
+  }
+
+  .stacked_box::before {
     /* content: "FILL";
     font-size: 2rem;
     color: var(--background);
@@ -40,7 +54,7 @@
     justify-content: center;
   }
   
-  .box::after {
+  .stacked_box::after {
     content: "";
     position: absolute;
     bottom: -50%; /* Center square */
@@ -49,9 +63,10 @@
     width: 200%;
     background-color: var(--background);
     border-radius: 35%; /* Smooth edges to appear like liquid */
-    animation: spin 6s ease-in-out infinite; /* Set to forwards to freeze on last frame */
+    animation: spin 6s ease 0s 1 normal forwards; /* Set to forwards to freeze on last frame */
   }
-  
+
+
   @keyframes spin {
     0% {
       transform: translateY(0) rotate(0deg);
@@ -76,7 +91,7 @@
     }
   }
 
-#ketchup_bottle {
+#ketchup_bottle2 {
     height: 250px;
     width: auto;
     z-index: 1;
